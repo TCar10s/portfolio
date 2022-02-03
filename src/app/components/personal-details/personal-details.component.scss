@@ -1,0 +1,11 @@
+.card {
+  @apply rounded-2xl p-4 max-w-screen-lg bg-white flex;
+}
+
+.card__header {
+  @apply mx-8;
+}
+
+.card__title {
+  @apply flex justify-between;
+}
