@@ -8,6 +8,7 @@ import { ProjectComponent } from './components/project/project.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { FormsModule } from '@angular/forms';
+import { ExperiencesComponent } from './components/experiences/experiences.component';
 
 @NgModule({
   declarations: [
@@ -15,14 +16,11 @@ import { FormsModule } from '@angular/forms';
     PersonalDetailsComponent,
     ProjectComponent,
     SkillsComponent,
-    BlogComponent
+    BlogComponent,
+    ExperiencesComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

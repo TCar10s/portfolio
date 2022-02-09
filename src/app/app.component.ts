@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Developer } from './interfaces/card.interface';
+import { Developer, Experience } from './interfaces/card.interface';
 
 @Component({
   selector: 'app-root',
@@ -58,10 +58,17 @@ export class AppComponent {
     {
       city: 'London',
       country: 'UK',
-    }
-  ]
+    },
+  ];
 
-  changeList({ city, country }: { city: string, country: string }) {
-    this.value = `${city}, ${country}`;
-  }
+  experiences: Experience[] = [
+    {
+      company: 'SAP',
+      position: 'Front-end developer',
+      time: 'November 2020 - Present',
+      description:
+        'Development of single page applications (SPAs) using Angular and implementing best practices.',
+      logo: './assets/images/wposs.jpg',
+    },
+  ];
 }

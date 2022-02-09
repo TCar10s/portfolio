@@ -11,3 +11,11 @@ export interface Skill {
   name: string;
   level: string;
 }
+
+export interface Experience {
+  company: string;
+  position: string;
+  time: string;
+  description: string;
+  logo: string;
+}
