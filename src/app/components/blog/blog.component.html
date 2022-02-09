@@ -1,18 +1,18 @@
 <section class="py-5 pl-5 rounded-2xl bg-white">
   <p class="text-gray-light-2">Blog</p>
 
-  <div class="flex gap-10">
-    <h1 class="text-gray-1 text-2xl mt-4 font-medium w-2/6">
-      How to organize your CSS
-    </h1>
-    <img
-      src="assets/images/pexels-blog.jpg"
-      class="rounded-l-xl overflow-hidden w-2/3"
-      alt="blog"
-    />
-  </div>
+  <div class="md:grid md:grid-cols-2 md:gap-x-12">
+    <div class="flex gap-10 overflow-hidden">
+      <h1 class="text-gray-1 text-2xl mt-4 font-medium">
+        How to organize your CSS
+      </h1>
+      <img
+        src="assets/images/pexels-blog-1.jpg"
+        class="rounded-l-xl md:hidden"
+        alt="blog"
+      />
+    </div>
 
-  <div class="pr-5">
     <p class="mt-12 text-base font-medium text-gray-3">
       In this article I tell the story about Proin eu justo sit amet lacus
       bibendum tincidunt. Vivamus non volutpat nisl, a luctus mi.
@@ -22,6 +22,12 @@
       feugiat malesuada molestie.
     </p>
 
-    <a href="#" class="mt-14 block text-primary">dev.to</a>
+    <a href="#" class="mt-7 block text-primary">dev.to</a>
+
+    <img
+      src="assets/images/pexels-blog-1.jpg"
+      class="rounded-l-xl hidden md:block md:col-[2_/_3] md:row-[3_/_-1]"
+      alt="blog"
+    />
   </div>
 </section>
