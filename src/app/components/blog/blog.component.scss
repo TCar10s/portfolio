@@ -1,3 +1,7 @@
 .skills {
   @apply p-5 rounded-2xl bg-white;
 }
+
+.card {
+  @apply py-5 pl-5 flex gap-10;
+}
