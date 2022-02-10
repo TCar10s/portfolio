@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Developer, Experience } from './interfaces/card.interface';
+import { Developer, Experience, Hobbie } from './interfaces/card.interface';
 
 @Component({
   selector: 'app-root',
@@ -70,5 +70,28 @@ export class AppComponent {
         'Development of single page applications (SPAs) using Angular and implementing best practices.',
       logo: './assets/images/wposs.jpg',
     },
+  ];
+
+  hobbies: Hobbie[] = [
+    {
+      name: 'Coding',
+      description: 'I love to code and learn new technologies.',
+      image: './assets/images/coding.jpeg',
+    },
+    {
+      name: 'Chess',
+      description: 'I love playing chess and learning new techniques.',
+      image: './assets/images/chess.jpeg',
+    },
+    {
+      name: 'Rubik',
+      description: 'I love playing Rubik\'s cube and learning new techniques.',
+      image: './assets/images/rubik.jpeg',
+    },
+    {
+      name: 'Gaming',
+      description: 'I love playing video games and learning new techniques.',
+      image: './assets/images/gaming.jpg',
+    }
   ];
 }

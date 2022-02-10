@@ -19,3 +19,9 @@ export interface Experience {
   description: string;
   logo: string;
 }
+
+export interface Hobbie {
+  name: string;
+  description: string;
+  image: string;
+}
