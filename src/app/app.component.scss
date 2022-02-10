@@ -1,0 +1,39 @@
+app-personal-details {
+  grid-area: personal-details;
+}
+
+app-project {
+  grid-area: project;
+}
+
+app-skills {
+  grid-area: skills;
+}
+
+app-blog {
+  grid-area: blog;
+}
+
+app-experience {
+  grid-area: experience;
+}
+
+app-hobbies {
+  grid-area: hobbies;
+}
+
+app-filter-projects {
+  grid-area: filter-projects;
+}
+
+.grid-content {
+  display: grid;
+  grid-gap: 20px;
+  gap: 20px;
+  height: 100vh;
+  grid-template-areas:
+      "personal-details skills"
+      "experience filter-projects"
+      "project blog"
+      "hobbies";
+}

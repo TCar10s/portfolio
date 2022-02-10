@@ -12,6 +12,7 @@ module.exports = {
         'gray-3': '#828282',
         'gray-light-1': '#C4C4C4',
         'gray-light-2': '#E0E0E0',
+        'card-primary': '#1e293b',
       },
       gridTemplateColumns: {
         'blog': '30% 70%',
