@@ -1,10 +1,10 @@
 <section class="card">
-  <h1 class="text-2xl font-medium">Hobbies</h1>
+  <h1 class="text-2xl font-medium text-gray-2">Hobbies</h1>
 
   <div class="sm:flex sm:gap-10">
     <div *ngFor="let item of hobbies" class="mt-5 sm:w-60">
       <img [src]="item.image" alt="hobbie" class="rounded-2xl bg-cover">
-      <h2 class="font-semibold mt-5">{{item.name}}</h2>
+      <h2 class="font-semibold mt-5 text-gray-1">{{item.name}}</h2>
       <p class="text-gray-3 mt-2">{{item.description}}</p>
     </div>
   </div>

@@ -3,14 +3,16 @@
 @import "tailwindcss/utilities";
 
 @import "assets/styles/buttons";
+@import "assets/styles/colors.scss";
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500");
 
 body {
-  background: #0f172a;
+  @apply bg-body-light dark:bg-body-dark;
   font-family: "Montserrat", sans-serif;
 }
 
 .card {
-  @apply p-5 rounded-2xl bg-card-primary;
+  @apply p-5 rounded-2xl bg-white dark:bg-card-primary;
 }
+
