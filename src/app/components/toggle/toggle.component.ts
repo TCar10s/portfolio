@@ -22,7 +22,7 @@ import {
       />
       <label
         for="toggle"
-        class="toggle-label block h-8 -ml-1 -mt-1 rounded-full bg-blue-50 cursor-pointer"
+        class="toggle-label block h-8 -ml-1 -mt-1 rounded-full bg-white cursor-pointer shadow-sm"
       ></label>
     </div>
   `,
