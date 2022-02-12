@@ -9,10 +9,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500");
 
 body {
-  @apply bg-body-light dark:bg-body-dark max-w-screen-xl mx-auto p-5 lg:p-10;
+  @apply bg-body-light dark:bg-body-dark
+          max-w-screen-xl mx-auto p-5 lg:p-10 bg-fixed md:bg-cover;
   font-family: "Montserrat", sans-serif;
   background-image: url("./assets/images/color-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
+  background-position: -180px -80px;
 }
