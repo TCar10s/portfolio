@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       colors: {
         primary: "#2F80ED",
+        "primary-dark": "#5EEAD4",
         "gray-1": "#333333",
         "gray-2": "#4F4F4F",
         "gray-3": "#828282",
@@ -17,10 +18,23 @@ module.exports = {
         "body-dark": "#0f172a",
         "body-light": "#F2F2F2",
       },
+      gridTemplateRows: {
+        blog: "auto",
+      },
       gridTemplateColumns: {
-        blog: "30% 70%",
+        blog: "repeat(3, 1fr)",
+      },
+      gridTemplateAreas: {
+        wide: [
+          "details details details",
+          "sidebar blog blog",
+          "sidebar hobbies hobbies",
+          "filter filter filter",
+          "project project project",
+        ],
+        slim: ["details", "sidebar", "blog", "hobbies", "filter", "project"],
       },
     },
   },
-  plugins: [],
+  plugins: [require("@savvywombat/tailwindcss-grid-areas")],
 };

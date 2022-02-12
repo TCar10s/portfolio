@@ -19,3 +19,7 @@ $body-light: #F2F2F2;
 .text-gray-3 {
   @apply dark:text-[#94A3B8];
 }
+
+.bg-primary {
+  @apply dark:bg-primary-dark;
+}

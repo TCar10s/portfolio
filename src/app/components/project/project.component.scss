@@ -1,9 +1,9 @@
 .card {
-  @apply rounded-2xl p-6 lg:flex lg:max-w-none lg:h-80;
+  @apply rounded-2xl p-6 md:flex md:max-w-none md:h-80;
 }
 
 .card__figcaption {
-  @apply lg:ml-10;
+  @apply md:ml-10;
 }
 
 .card__title {

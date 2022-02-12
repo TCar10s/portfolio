@@ -1,26 +1,27 @@
-<div class="max-w-7xl mx-auto grid-content p-6">
-  <div>
-    <app-toggle></app-toggle>
-  </div>
-  <div class="personal-details dark-mode">
+<div class="flex justify-between items-center mb-5">
+  <h1 class="text-gray-1 text-3xl">Portfolio</h1>
+  <app-toggle></app-toggle>
+</div>
+<div class="grid gap-5 grid-areas-slim md:grid-cols-blog md:grid-areas-wide">
+  <div class="grid-in-details">
     <app-personal-details [developer]="developer"></app-personal-details>
   </div>
-  <div class="project">
-    <app-project></app-project>
-  </div>
-  <div class="skills">
+  <div class="grid-in-sidebar">
     <app-skills [skills]="skills"></app-skills>
-  </div>
-  <div class="blog>">
-    <app-blog></app-blog>
-  </div>
-  <div class="experiences">
+    <div class="my-5"></div>
     <app-experiences [experiences]="experiences"></app-experiences>
   </div>
-  <div class="hobbies">
+  <div class="grid-in-blog">
+    <app-blog></app-blog>
+  </div>
+
+  <div class="grid-in-hobbies">
     <app-hobbies [hobbies]="hobbies"></app-hobbies>
   </div>
-  <div class="filter-projects">
+  <div class="grid-in-filter">
     <app-filter-projects></app-filter-projects>
+  </div>
+  <div class="grid-in-project">
+    <app-project></app-project>
   </div>
 </div>
