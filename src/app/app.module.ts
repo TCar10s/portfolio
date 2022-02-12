@@ -12,6 +12,7 @@ import { ExperiencesComponent } from './components/experiences/experiences.compo
 import { HobbiesComponent } from './components/hobbies/hobbies.component';
 import { FilterProjectsComponent } from './components/filter-projects/filter-projects.component';
 import { ToggleComponent } from './components/toggle/toggle.component';
+import { CertificatesComponent } from './components/certificates/certificates.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ToggleComponent } from './components/toggle/toggle.component';
     HobbiesComponent,
     FilterProjectsComponent,
     ToggleComponent,
+    CertificatesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

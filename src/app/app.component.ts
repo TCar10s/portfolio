@@ -75,7 +75,8 @@ export class AppComponent {
   hobbies: Hobbie[] = [
     {
       name: 'Coding',
-      description: 'I love to code and learn new technologies.',
+      description:
+        'I love to code and learn new technologies. I am always looking for new challenges.',
       image: './assets/images/coding.jpeg',
     },
     {
@@ -85,13 +86,43 @@ export class AppComponent {
     },
     {
       name: 'Rubik',
-      description: 'I love playing Rubik\'s cube and learning new techniques.',
+      description: "I love playing Rubik's cube and learning new techniques.",
       image: './assets/images/rubik.jpeg',
     },
+    // {
+    //   name: 'Gaming',
+    //   description: 'I love playing video games and learning new techniques.',
+    //   image: './assets/images/gaming.jpg',
+    // }
+  ];
+
+  certificates: any[] = [
     {
-      name: 'Gaming',
-      description: 'I love playing video games and learning new techniques.',
-      image: './assets/images/gaming.jpg',
-    }
+      name: 'Angular (Intermediate)',
+      description:
+        'Has successfully cleared the asserssment for the skill in Angular.',
+      image:
+        'https://media-exp1.licdn.com/dms/image/C560BAQHneWLNCPQgDA/company-logo_100_100/0/1641202397642?e=1652918400&v=beta&t=3CGKi4k3XA051g5dJlZH9VBmvraYUBmF9qMSOWpZgN0',
+      expedition: 'January 2022',
+      link: 'https://www.hackerrank.com/certificates/92ecaf53a18c',
+    },
+    {
+      name: 'JavaScript (Basic)',
+      description:
+        'Has successfully cleared the asserssment for the skill in JavaScript.',
+      image:
+        'https://media-exp1.licdn.com/dms/image/C560BAQHneWLNCPQgDA/company-logo_100_100/0/1641202397642?e=1652918400&v=beta&t=3CGKi4k3XA051g5dJlZH9VBmvraYUBmF9qMSOWpZgN0',
+      expedition: 'January 2022',
+      link: 'https://www.hackerrank.com/certificates/29e7c14e7bc0',
+    },
+    {
+      name: 'CSS Certificate',
+      description:
+        'Has successfully cleared the asserssment for the skill in CSS.',
+      image:
+        'https://media-exp1.licdn.com/dms/image/C560BAQHneWLNCPQgDA/company-logo_100_100/0/1641202397642?e=1652918400&v=beta&t=3CGKi4k3XA051g5dJlZH9VBmvraYUBmF9qMSOWpZgN0',
+      expedition: 'January 2022',
+      link: 'https://www.hackerrank.com/certificates/ac1532880848',
+    },
   ];
 }

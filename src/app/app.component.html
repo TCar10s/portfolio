@@ -2,22 +2,25 @@
   <h1 class="text-gray-1 text-3xl">Portfolio</h1>
   <app-toggle></app-toggle>
 </div>
-<div class="grid gap-5 grid-areas-slim md:grid-cols-blog md:grid-areas-wide">
+<div class="grid gap-5 gap-y-8 grid-areas-slim md:grid-cols-blog md:grid-areas-wide">
   <div class="grid-in-details">
     <app-personal-details [developer]="developer"></app-personal-details>
   </div>
+
   <div class="grid-in-sidebar">
     <app-skills [skills]="skills"></app-skills>
     <div class="my-5"></div>
-    <app-experiences [experiences]="experiences"></app-experiences>
-  </div>
-  <div class="grid-in-blog">
-    <app-blog></app-blog>
-  </div>
-
-  <div class="grid-in-hobbies">
     <app-hobbies [hobbies]="hobbies"></app-hobbies>
   </div>
+
+  <div class="grid-in-main">
+    <app-blog></app-blog>
+    <div class="my-5"></div>
+    <app-experiences [experiences]="experiences"></app-experiences>
+    <div class="my-5"></div>
+    <app-certificates [certificates]="certificates"></app-certificates>
+  </div>
+
   <div class="grid-in-filter">
     <app-filter-projects></app-filter-projects>
   </div>

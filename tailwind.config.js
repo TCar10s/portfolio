@@ -27,12 +27,12 @@ module.exports = {
       gridTemplateAreas: {
         wide: [
           "details details details",
-          "sidebar blog blog",
-          "sidebar hobbies hobbies",
+          "sidebar main main",
+          "sidebar main main",
           "filter filter filter",
           "project project project",
         ],
-        slim: ["details", "sidebar", "blog", "hobbies", "filter", "project"],
+        slim: ["details", "sidebar", "main", "filter", "project"],
       },
     },
   },
