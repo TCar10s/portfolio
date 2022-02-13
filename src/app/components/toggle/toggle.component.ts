@@ -10,7 +10,7 @@ import {
   selector: 'app-toggle',
   template: `
     <div
-      class="relative inline-block w-12 mr-2 align-middle select-none transition duration-200 ease-in"
+      class="relative inline-block w-12 mr-2 align-middle select-none"
     >
       <input
         #toggleInput
@@ -22,7 +22,8 @@ import {
       />
       <label
         for="toggle"
-        class="toggle-label block h-8 -ml-1 -mt-1 rounded-full bg-white cursor-pointer shadow-sm"
+        class="toggle-label block h-8 -ml-1 -mt-1 rounded-full bg-white
+               cursor-pointer shadow-sm"
       ></label>
     </div>
   `,

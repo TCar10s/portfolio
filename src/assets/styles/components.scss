@@ -1,5 +1,5 @@
 @layer components {
-  .glass-efect {
+  .glass-effect {
     background: rgba(255, 255, 255, 0.1);
     // box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(4px);
@@ -8,6 +8,6 @@
   }
 
   .card {
-    @apply p-5 rounded-2xl bg-white dark:glass-efect;
+    @apply p-5 rounded-2xl bg-white dark:glass-effect;
   }
 }

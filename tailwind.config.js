@@ -18,9 +18,6 @@ module.exports = {
         "body-dark": "#0f172a",
         "body-light": "#F2F2F2",
       },
-      gridTemplateRows: {
-        blog: "auto",
-      },
       gridTemplateColumns: {
         blog: "repeat(3, 1fr)",
       },
