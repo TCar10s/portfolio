@@ -10,10 +10,7 @@
 
 body {
   @apply bg-body-light dark:bg-body-dark
-          max-w-screen-xl mx-auto p-5 lg:p-10 bg-fixed md:bg-cover;
+          max-w-screen-xl mx-auto p-5 lg:p-10
+          bg-fixed md:bg-cover dark:bg-colors;
   font-family: "Montserrat", sans-serif;
-  background-image: url("./assets/images/color-bg.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: -180px -80px;
 }

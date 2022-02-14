@@ -1,10 +1,17 @@
 @layer components {
   .glass-effect {
     background: rgba(255, 255, 255, 0.1);
-    // box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
+    // box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    // -webkit-backdrop-filter: blur(4px);
+  }
+
+  .bg-colors {
+    background-image: url("../images/color-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: -180px -80px;
   }
 
   .card {
