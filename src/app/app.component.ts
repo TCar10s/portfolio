@@ -12,6 +12,16 @@ export class AppComponent implements OnInit {
   constructor(public portfolioService: PortfolioService) {}
 
   public ngOnInit(): void {
-    particlesJS.load('particles-js', './assets/particles.json', null);
+    const theme = localStorage.getItem('theme');
+
+    theme ? this.loadParticles('dark') : this.loadParticles('light');
+  }
+
+  private loadParticles(theme: string): void {
+    particlesJS.load(
+      'particles-js',
+      `./assets/json/particles-${theme}.json`,
+      null
+    );
   }
 }

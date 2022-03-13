@@ -6,12 +6,12 @@ import {
   ViewChild,
 } from '@angular/core';
 
+declare let particlesJS: any;
+
 @Component({
   selector: 'app-toggle',
   template: `
-    <div
-      class="relative inline-block w-12 mr-2 align-middle select-none"
-    >
+    <div class="relative inline-block w-12 mr-2 align-middle select-none">
       <input
         #toggleInput
         type="checkbox"
@@ -38,7 +38,7 @@ import {
       .toggle-checkbox:checked {
         right: 0;
         border: none;
-        background-color: #5EEAD4;
+        background-color: #5eead4;
         background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' className='h-10 w-10' fill='%23FFF' viewBox='0 0 24 24' stroke='rgb(129 124 214)' > <path strokeLinecap='round' strokeLinejoin='round' d='M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z' /> </svg>");
       }
       .toggle-checkbox:checked + .toggle-label {
@@ -61,21 +61,35 @@ export class ToggleComponent implements OnInit, AfterViewInit {
       : this.html.classList.remove('dark');
   }
 
-  ngAfterViewInit() {
+  ngAfterViewInit(): void {
     if (localStorage.theme) {
       this.toggle.nativeElement.checked = true;
     }
   }
 
-  onChange() {
+  onChange(): void {
     const theme = localStorage.theme;
 
     if (theme) {
       this.html.classList.remove('dark');
       localStorage.removeItem('theme');
-    } else {
-      this.html.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
+      this.loadParticles('light');
+
+      return;
     }
+
+    this.html.classList.add('dark');
+    localStorage.setItem('theme', 'dark');
+    this.loadParticles('dark');
+  }
+
+  private loadParticles(theme: string): void {
+    console.log('called');
+
+    particlesJS.load(
+      'particles-js',
+      `../../assets/json/particles-${theme}.json`,
+      null
+    );
   }
 }
