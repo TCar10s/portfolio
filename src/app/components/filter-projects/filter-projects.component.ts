@@ -9,7 +9,7 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
 export class FilterProjectsComponent implements OnInit {
   @Output() onFilter: EventEmitter<string> = new EventEmitter<string>();
 
-  buttons: string[] = ['Angular', 'Responsive', 'DevChallenge', 'All'];
+  buttons: string[] = ['Angular', 'Responsive', 'DevChallenge', 'Games', 'All'];
   totalProjects!: number;
 
   constructor(private portfolioService: PortfolioService) {}

@@ -105,6 +105,15 @@ export class PortfolioService {
       link: 'https://www.hackerrank.com/certificates/92ecaf53a18c',
     },
     {
+      name: 'Angular (Basic)',
+      description:
+        'Has successfully cleared the asserssment for the skill in Angular basic.',
+      image:
+        'https://media-exp1.licdn.com/dms/image/C560BAQHneWLNCPQgDA/company-logo_100_100/0/1641202397642?e=1652918400&v=beta&t=3CGKi4k3XA051g5dJlZH9VBmvraYUBmF9qMSOWpZgN0',
+      expedition: 'January 2022',
+      link: 'https://www.hackerrank.com/certificates/16e5c8924fed',
+    },
+    {
       name: 'JavaScript (Basic)',
       description:
         'Has successfully cleared the asserssment for the skill in JavaScript.',
@@ -149,7 +158,7 @@ export class PortfolioService {
     {
       name: 'Films app',
       technologies: '#HTML #CSS #Angular',
-      description: 'In this project, I work with HTML, CSS, TypeScript, JavaScript and Angular to create app for a movie database.',
+      description: 'In this project, I work with HTML, CSS, TypeScript, JavaScript and Angular to create app for a movie search.',
       image: './assets/images/films-app.png',
       demo: 'https://films-app-ng.netlify.app/home',
       code: 'https://github.com/TCar10s/ng-films-app',
@@ -162,6 +171,24 @@ export class PortfolioService {
       image: './assets/images/my-team-page.png',
       demo: 'https://tcar10s.github.io/my-team-page/',
       code: 'https://github.com/TCar10s/my-team-page',
+      showCode: true
+    },
+    {
+      name: 'Blackjack',
+      technologies: '#HTML #CSS #JavaScript #Games',
+      description: 'In this project, I work with HTML, CSS and JavaScript to create a game.',
+      image: './assets/images/game-blackjack.png',
+      demo: 'https://tcar10s.github.io/game-blackjack/',
+      code: 'https://github.com/TCar10s/game-blackjack',
+      showCode: true
+    },
+    {
+      name: 'Todo List',
+      technologies: '#HTML #CSS #JavaScript',
+      description: 'In this project, I work with HTML, CSS and JavaScript to create a todo list.',
+      image: './assets/images/todo-list.png',
+      demo: 'https://tcar10s.github.io/todo-list-js/',
+      code: 'https://github.com/TCar10s/todo-list-js',
       showCode: true
     }
   ];

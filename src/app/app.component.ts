@@ -7,6 +7,5 @@ import { PortfolioService } from './services/portfolio.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  filter = '';
   constructor(public portfolioService: PortfolioService) {}
 }

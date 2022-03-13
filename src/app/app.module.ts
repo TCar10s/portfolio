@@ -14,6 +14,9 @@ import { FilterProjectsComponent } from './components/filter-projects/filter-pro
 import { ToggleComponent } from './components/toggle/toggle.component';
 import { CertificatesComponent } from './components/certificates/certificates.component';
 import { FilterProjectsPipe } from './shared/pipes/filter-projects.pipe';
+import { SidebarComponent } from './layouts/sidebar/sidebar.component';
+import { MainComponent } from './layouts/main/main.component';
+import { ProjectsComponent } from './layouts/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +31,9 @@ import { FilterProjectsPipe } from './shared/pipes/filter-projects.pipe';
     ToggleComponent,
     CertificatesComponent,
     FilterProjectsPipe,
+    SidebarComponent,
+    MainComponent,
+    ProjectsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

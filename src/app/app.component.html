@@ -4,7 +4,7 @@
 </div>
 
 <div
-  class="grid gap-5 gap-y-8 grid-areas-slim md:grid-cols-blog md:grid-areas-wide"
+  class="grid gap-5 grid-areas-slim md:grid-cols-blog md:grid-areas-wide"
 >
   <div class="grid-in-details">
     <app-personal-details
@@ -13,32 +13,14 @@
   </div>
 
   <div class="grid-in-sidebar">
-    <app-skills [skills]="portfolioService.skills"></app-skills>
-    <div class="my-5"></div>
-    <app-hobbies [hobbies]="portfolioService.hobbies"></app-hobbies>
+    <app-sidebar></app-sidebar>
   </div>
 
   <div class="grid-in-main">
-    <app-blog></app-blog>
-    <div class="my-5"></div>
-    <app-experiences
-      [experiences]="portfolioService.experiences"
-    ></app-experiences>
-    <div class="my-5"></div>
-    <app-certificates
-      [certificates]="portfolioService.certificates"
-    ></app-certificates>
+    <app-main></app-main>
   </div>
 
-  <div class="grid-in-filter">
-    <app-filter-projects (onFilter)="filter = $event"></app-filter-projects>
-  </div>
-  <div class="grid-in-project">
-    <div class="grid-auto-fill">
-      <app-project
-        *ngFor="let project of portfolioService.projects | filterProjects: filter"
-        [project]="project"
-      ></app-project>
-    </div>
+  <div class="grid-in-projects">
+    <app-projects></app-projects>
   </div>
 </div>
