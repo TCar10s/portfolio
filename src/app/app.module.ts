@@ -17,6 +17,7 @@ import { FilterProjectsPipe } from './shared/pipes/filter-projects.pipe';
 import { SidebarComponent } from './layouts/sidebar/sidebar.component';
 import { MainComponent } from './layouts/main/main.component';
 import { ProjectsComponent } from './layouts/projects/projects.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { ProjectsComponent } from './layouts/projects/projects.component';
     SidebarComponent,
     MainComponent,
     ProjectsComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

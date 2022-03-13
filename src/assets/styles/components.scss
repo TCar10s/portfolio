@@ -13,6 +13,6 @@
   // }
 
   .card {
-    @apply p-5 rounded-2xl bg-white dark:bg-card-primary drop-shadow-md;
+    @apply p-5 rounded-2xl bg-white dark:bg-card-primary dark:bg-opacity-90 drop-shadow-md;
   }
 }
