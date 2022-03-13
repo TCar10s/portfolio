@@ -28,7 +28,7 @@ module.exports = {
           "sidebar main main",
           "projects projects projects",
         ],
-        slim: ["details", "sidebar", "main", "filter", "project"],
+        slim: ["details", "sidebar", "main", "projects"],
       },
     },
   },
