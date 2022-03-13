@@ -1,23 +1,11 @@
 <section class="card">
-  <h1 class="text-2xl mb-5 text-gray-1">Projects</h1>
+  <h1 class="text-2xl mb-5 text-gray-1">Projects ({{totalProjects}})</h1>
   <div class="flex flex-wrap gap-3">
-    <button
-      class="btn btn-secondary active:bg-primary active:text-white
-           dark:active:bg-primary-dark dark:active:text-[#1c2127]"
+    <a
+      class="btn-filter"
+      *ngFor="let button of buttons"
+      (click)="onFilter.emit(button)"
+      >{{ button }}</a
     >
-      Angular
-    </button>
-    <button
-      class="btn btn-secondary active:bg-primary active:text-white
-           dark:active:bg-primary-dark dark:active:text-[#1c2127]"
-    >
-      Responsive
-    </button>
-    <button
-      class="btn btn-secondary active:bg-primary active:text-white
-           dark:active:bg-primary-dark dark:active:text-[#1c2127]"
-    >
-      Angular
-    </button>
   </div>
 </section>

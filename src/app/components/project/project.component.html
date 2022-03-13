@@ -1,36 +1,35 @@
 <figure class="card">
-  <img
-    src="./assets/images/interiorConsultantThumbnail.png"
-    alt="Person"
-    class="rounded-2xl"
-  />
+  <img [src]="project.image" height="217px" alt="Person" class="rounded-xl" />
 
-  <figcaption class="card__figcaption">
-    <div class="card__title">
+  <figcaption>
+    <div class="mt-4">
       <div>
-        <h1 class="text-sm font-medium text-gray-2">#HTML #CSS #responsive</h1>
-        <p class="text-2xl text-gray-1 font-medium mt-4 bg-g">My Gallery</p>
+        <h1 class="text-sm font-medium text-gray-2">{{ project.technologies }}</h1>
+        <p class="text-2xl text-gray-1 font-medium mt-4 bg-g">
+          {{ project.name }}
+        </p>
       </div>
     </div>
 
     <blockquote class="mt-3 font-medium text-gray-3">
-      In this project, I work with HTML and CSS to create a responsive page .
-      The design is from devchallenge.io.
+      {{ project.description }}
     </blockquote>
 
     <div class="mt-8">
       <a
         class="btn btn-primary"
-        href="https://tcar10s.github.io/Interior-consultant/"
+        [href]="project.demo"
         target="_blank"
         >Demo</a
       >
       <a
+        *ngIf="project.showCode"
         class="btn btn-secondary ml-3"
-        href="https://github.com/TCar10s/Interior-consultant"
+        [href]="project.code"
         target="_blank"
         >Code</a
       >
     </div>
   </figcaption>
 </figure>
+

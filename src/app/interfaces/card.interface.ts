@@ -25,3 +25,13 @@ export interface Hobbie {
   description: string;
   image: string;
 }
+
+export interface Project  {
+  name: string;
+  technologies: string;
+  description: string;
+  image: string;
+  demo: string;
+  code: string;
+  showCode?: boolean;
+}
