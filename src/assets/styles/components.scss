@@ -1,23 +1,18 @@
 @layer components {
   .glass-effect {
-    background: rgba(255, 255, 255, 0.1);
+    // background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(4px);
     border-radius: 10px;
   }
 
-  .bg-colors {
-    background-image: url("../images/color-bg.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: -180px -80px;
-  }
-
-  .btn-filter {
-    @apply btn btn-secondary active:bg-primary active:text-white cursor-pointer
-          dark:active:bg-primary-dark dark:active:text-[#1c2127];
-  }
+  // .bg-colors {
+  //   background-image: url("../images/color-bg.png");
+  //   background-repeat: no-repeat;
+  //   background-size: 100% 100%;
+  //   background-position: -180px -80px;
+  // }
 
   .card {
-    @apply p-5 rounded-2xl bg-white dark:glass-effect drop-shadow-md;
+    @apply p-5 rounded-2xl bg-white dark:bg-card-primary drop-shadow-md;
   }
 }

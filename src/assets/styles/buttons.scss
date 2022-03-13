@@ -9,5 +9,10 @@
 
 .btn-secondary {
   @apply bg-white border border-primary text-primary hover:bg-blue-50
-          dark:border-primary-dark dark:text-primary-dark font-medium dark:bg-[#071426];
+          dark:border-primary-dark dark:text-primary-dark font-medium dark:bg-body-dark;
+}
+
+.btn-filter {
+  @apply btn btn-secondary active:bg-primary active:text-white cursor-pointer
+        dark:active:bg-primary-dark dark:active:text-[#1c2127] dark:bg-body-dark;
 }
