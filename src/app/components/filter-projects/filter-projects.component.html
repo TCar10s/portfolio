@@ -4,7 +4,7 @@
     <a
       class="btn-filter"
       *ngFor="let button of buttons"
-      (click)="onFilter.emit(button)"
+      (click)="emitFilter(button)"
       >{{ button }}</a
     >
   </div>

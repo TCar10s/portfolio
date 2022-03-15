@@ -15,4 +15,7 @@
 .btn-filter {
   @apply btn btn-secondary active:bg-primary active:text-white cursor-pointer
         dark:active:bg-primary-dark dark:active:text-[#1c2127] dark:bg-body-dark;
+  &.active {
+    @apply bg-primary text-white;
+  }
 }

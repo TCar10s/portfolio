@@ -11,12 +11,15 @@ export class FilterProjectsComponent implements OnInit {
 
   buttons: string[] = ['Angular', 'Responsive', 'DevChallenge', 'Games', 'All'];
   totalProjects!: number;
-
   constructor(private portfolioService: PortfolioService) {}
 
   ngOnInit(): void {
     this.portfolioService.getTotalProjects.subscribe((totalProjects) => {
       this.totalProjects = totalProjects;
     });
+  }
+
+  emitFilter(filter: string) {
+    this.onFilter.emit(filter);
   }
 }

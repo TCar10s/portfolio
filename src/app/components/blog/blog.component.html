@@ -1,35 +1,35 @@
 <section class="card">
-  <div class="flex gap-10">
-    <div class="lg:w-1/2">
-      <p class="text-gray-light-2">Blog</p>
+  <div class="xl:flex gap-5">
+    <div class="xl:w-1/2">
+      <p class="text-gray-light-1">Recommended publication</p>
 
       <div class="flex gap-10 justify-between lg:flex-none overflow-hidden">
         <h1 class="text-gray-1 text-2xl mt-4 font-medium w-44">
-          How to organize your CSS
+          JavaScript var, let and const
         </h1>
-        <img
-          src="assets/images/pexels-blog-1.jpg"
-          class="rounded-l-xl sm:block lg:hidden"
-          alt="blog"
-        />
       </div>
 
       <p class="mt-10 lg:mt-6 text-base font-medium text-gray-3">
-        In this article I tell the story about Proin eu justo sit amet lacus
-        bibendum tincidunt. Vivamus non volutpat nisl, a luctus mi.
+        What do the key words <code>var</code>, <code>let</code> and
+        <code>const</code> do?
         <br />
         <br />
-        Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque
-        feugiat malesuada molestie.
+        Both <code>let</code> and <code>var</code> can have their values changed
+        after declaration and can be initialized without a value. Variables
+        declared with <code>const</code> cannot change, and a value must be
+        assigned when the variable is declared.
       </p>
-
-      <a href="#" class="mt-10 block text-primary">dev.to</a>
     </div>
 
-    <img
-      src="assets/images/pexels-blog-1.jpg"
-      class="rounded-l-xl lg:w-1/2 hidden lg:block"
-      alt="blog"
-    />
+    <pre class="flex items-center">
+      <code class="rounded-lg w-full mt-5" [highlight]="code">
+      </code>
+    </pre>
   </div>
+  <a
+    href="https://dev.to/fig781/javascript-var-let-and-const-2g57"
+    target="_blank"
+    class="mt-10 block text-primary dark:text-primary-dark underline"
+    >dev.to</a
+  >
 </section>

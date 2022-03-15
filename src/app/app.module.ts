@@ -18,6 +18,7 @@ import { SidebarComponent } from './layouts/sidebar/sidebar.component';
 import { MainComponent } from './layouts/main/main.component';
 import { ProjectsComponent } from './layouts/projects/projects.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
 
 @NgModule({
   declarations: [
@@ -37,8 +38,18 @@ import { FooterComponent } from './components/footer/footer.component';
     ProjectsComponent,
     FooterComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
-  providers: [],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HighlightModule],
+  providers: [
+    {
+      provide: HIGHLIGHT_OPTIONS,
+      useValue: {
+        coreLibraryLoader: () => import('highlight.js/lib/core'),
+        languages: {
+          typescript: () => import('highlight.js/lib/languages/typescript'),
+        },
+      },
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

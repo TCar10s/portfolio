@@ -1,0 +1,10 @@
+body {
+  @apply bg-body-light dark:bg-body-dark
+          max-w-screen-xl mx-auto p-5 lg:p-10
+          bg-fixed md:bg-cover;
+  font-family: "Montserrat", sans-serif;
+}
+
+code {
+  @apply text-primary dark:text-primary-dark;
+}
