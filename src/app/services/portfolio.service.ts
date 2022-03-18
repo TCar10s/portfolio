@@ -63,7 +63,7 @@ export class PortfolioService {
     {
       company: 'SAP',
       position: 'Front-end developer',
-      time: 'November 2020 - Present',
+      time: 'November 2020 - February 2022',
       description:
         'Development of single page applications (SPAs) using Angular and implementing best practices.',
       logo: './assets/images/wposs.jpg',
