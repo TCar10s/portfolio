@@ -27,7 +27,7 @@ export class PortfolioService {
     role: 'Front-end developer',
     email: 'cslobosilva@gmail.com',
     phone: '(+57) 3245720920',
-    image: './assets/images/carlos_lobo.jpg',
+    image: './assets/images/carlos_lobo.webp',
     description:
       'I am a Front-end developer with a passion for creating beautiful and functional web applications. I have a strong background in web development and have worked with a variety of technologies, including HTML, CSS, JavaScript, Angular, and Node.js.',
   };
@@ -66,7 +66,7 @@ export class PortfolioService {
       time: 'November 2020 - February 2022',
       description:
         'Development of single page applications (SPAs) using Angular and implementing best practices.',
-      logo: './assets/images/wposs.jpg',
+      logo: './assets/images/wposs.webp',
     },
   ];
 
@@ -75,22 +75,22 @@ export class PortfolioService {
       name: 'Coding',
       description:
         'I love to code and learn new technologies. I am always looking for new challenges.',
-      image: './assets/images/coding.jpeg',
+      image: './assets/images/coding.webp',
     },
     {
       name: 'Chess',
       description: 'I love playing chess and learning new techniques.',
-      image: './assets/images/chess.jpeg',
+      image: './assets/images/chess.webp',
     },
     {
       name: 'Rubik',
       description: "I love playing Rubik's cube and learning new techniques.",
-      image: './assets/images/rubik.jpeg',
+      image: './assets/images/rubik.webp',
     },
     // {
     //   name: 'Gaming',
     //   description: 'I love playing video games and learning new techniques.',
-    //   image: './assets/images/gaming.jpg',
+    //   image: './assets/images/gaming.webp',
     // }
   ];
 
@@ -139,7 +139,7 @@ export class PortfolioService {
       technologies: '#HTML #CSS #Responsive #Angular',
       description:
         'In this project, I work with HTML, CSS, TypeScript, JavaScript and Angular to create a responsive page for a hotel.',
-      image: './assets/images/hospedaje-mirador.png',
+      image: './assets/images/hospedaje-mirador.webp',
       demo: 'https://hospedajemirador.com/',
       code: '#',
       showCode: false
@@ -149,7 +149,7 @@ export class PortfolioService {
       technologies: '#HTML #CSS #JavaScript #DevChallenge',
       description:
         'In this project, I work with HTML and CSS to create a responsive page . The design is from devchallenge.io.',
-      image: './assets/images/interiorConsultantThumbnail.png',
+      image: './assets/images/interiorConsultantThumbnail.webp',
       demo: 'https://tcar10s.github.io/Interior-consultant/',
       code: 'https://github.com/TCar10s/Interior-consultant',
       showCode: true
@@ -159,7 +159,7 @@ export class PortfolioService {
       name: 'Films app',
       technologies: '#HTML #CSS #Angular',
       description: 'In this project, I work with HTML, CSS, TypeScript, JavaScript and Angular to create app for a movie search.',
-      image: './assets/images/films-app.png',
+      image: './assets/images/films-app.webp',
       demo: 'https://films-app-ng.netlify.app/home',
       code: 'https://github.com/TCar10s/ng-films-app',
       showCode: true
@@ -168,7 +168,7 @@ export class PortfolioService {
       name: 'My Team Page',
       technologies: '#HTML #CSS #JavaScript #DevChallenge',
       description: 'In this project, I work with HTML and CSS to create a responsive page.',
-      image: './assets/images/my-team-page.png',
+      image: './assets/images/my-team-page.webp',
       demo: 'https://tcar10s.github.io/my-team-page/',
       code: 'https://github.com/TCar10s/my-team-page',
       showCode: true
@@ -177,7 +177,7 @@ export class PortfolioService {
       name: 'Blackjack',
       technologies: '#HTML #CSS #JavaScript #Games',
       description: 'In this project, I work with HTML, CSS and JavaScript to create a game.',
-      image: './assets/images/game-blackjack.png',
+      image: './assets/images/game-blackjack.webp',
       demo: 'https://tcar10s.github.io/game-blackjack/',
       code: 'https://github.com/TCar10s/game-blackjack',
       showCode: true
@@ -186,7 +186,7 @@ export class PortfolioService {
       name: 'Todo List',
       technologies: '#HTML #CSS #JavaScript',
       description: 'In this project, I work with HTML, CSS and JavaScript to create a todo list.',
-      image: './assets/images/todo-list.png',
+      image: './assets/images/todo-list.webp',
       demo: 'https://tcar10s.github.io/todo-list-js/',
       code: 'https://github.com/TCar10s/todo-list-js',
       showCode: true
