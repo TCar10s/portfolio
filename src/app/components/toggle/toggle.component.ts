@@ -84,8 +84,6 @@ export class ToggleComponent implements OnInit, AfterViewInit {
   }
 
   private loadParticles(theme: string): void {
-    console.log('called');
-
     particlesJS.load(
       'particles-js',
       `../../assets/json/particles-${theme}.json`,
