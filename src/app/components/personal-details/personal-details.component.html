@@ -5,23 +5,24 @@
     <figcaption class="details__figcaption">
       <div class="details__title">
         <div>
-          <div class="container font-semibold text-2xl text-gray-2 leading-none">
+          <h1 class="text-2xl text-gray-2 font-semibold">{{ developer.name }}</h1>
+          <!-- <div class="container font-semibold text-2xl text-gray-2 leading-none">
             <div class="stack" style="--stacks: 3;">
               <span style="--index: 0;"> {{ developer.name }}</span>
               <span style="--index: 1;"> {{ developer.name }}</span>
               <span style="--index: 2;"> {{ developer.name }}</span>
             </div>
-          </div>
+          </div> -->
           <p class="text-gray-3 font-medium">{{ developer.role }}</p>
         </div>
 
         <div class="text-gray-2 font-medium mt-4 md:mt-0">
           <p class="flex items-center gap-3">
-            <span class="material-icons">mail</span>
+            <span class="material-icons" translate="no">mail</span>
             {{ developer.email }}
           </p>
           <p class="flex items-center gap-3">
-            <span class="material-icons">phone</span>
+            <span class="material-icons" translate="no">phone</span>
             {{ developer.phone }}
           </p>
         </div>
