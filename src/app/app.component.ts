@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PortfolioService } from './services/portfolio.service';
 
-declare let particlesJS: any;
+// declare let particlesJS: any;
 
 @Component({
   selector: 'app-root',
@@ -18,10 +18,10 @@ export class AppComponent implements OnInit {
   }
 
   private loadParticles(theme: string): void {
-    particlesJS.load(
-      'particles-js',
-      `./assets/json/particles-${theme}.json`,
-      null
-    );
+    // particlesJS.load(
+    //   'particles-js',
+    //   `./assets/json/particles-${theme}.json`,
+    //   null
+    // );
   }
 }

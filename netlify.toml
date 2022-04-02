@@ -1,8 +1,9 @@
 # example netlify.toml
 [build]
-  command = "ng build"
+  command = "npm run prerender"
   functions = "netlify/functions"
-  publish = "dist/portfolio"
+  publish = "dist/portfolio/browser"
+
 
   ## Uncomment to use this redirect for Single Page Applications like create-react-app.
   ## Not needed for static site generators.

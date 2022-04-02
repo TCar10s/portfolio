@@ -2,11 +2,13 @@ import {
   AfterViewInit,
   Component,
   ElementRef,
+  Inject,
   OnInit,
   ViewChild,
 } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 
-declare let particlesJS: any;
+// declare let particlesJS: any;
 
 @Component({
   selector: 'app-toggle',
@@ -49,9 +51,9 @@ declare let particlesJS: any;
 })
 export class ToggleComponent implements OnInit, AfterViewInit {
   @ViewChild('toggleInput') toggle!: ElementRef<HTMLInputElement>;
-  html: HTMLElement = document.documentElement;
+  html: HTMLElement = this.document.documentElement;
 
-  constructor() {}
+  constructor(@Inject(DOCUMENT) private document: Document) {}
 
   ngOnInit(): void {
     const theme = localStorage.theme;
@@ -84,10 +86,10 @@ export class ToggleComponent implements OnInit, AfterViewInit {
   }
 
   private loadParticles(theme: string): void {
-    particlesJS.load(
-      'particles-js',
-      `../../assets/json/particles-${theme}.json`,
-      null
-    );
+    // particlesJS.load(
+    //   'particles-js',
+    //   `../../assets/json/particles-${theme}.json`,
+    //   null
+    // );
   }
 }
