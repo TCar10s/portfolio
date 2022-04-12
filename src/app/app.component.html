@@ -1,12 +1,12 @@
-<div class="flex justify-end items-center mb-5">
+<div class="flex items-center justify-end mb-5">
   <app-toggle></app-toggle>
 </div>
 
-<div
-  class="grid gap-5 grid-areas-slim md:grid-cols-blog md:grid-areas-wide"
->
+<div class="grid gap-5 grid-areas-slim sm:grid-areas-medium xl:grid-areas-wide">
   <div class="grid-in-details">
-    <app-personal-details [developer]="portfolioService.developer"></app-personal-details>
+    <app-personal-details
+      [developer]="portfolioService.developer"
+    ></app-personal-details>
   </div>
 
   <div class="grid-in-sidebar">
@@ -14,12 +14,19 @@
   </div>
 
   <div class="grid-in-main">
-    <app-main></app-main>
+    <app-blog></app-blog>
+    <div class="mb-5"></div>
+    <app-experiences [experiences]="portfolioService.experiences"></app-experiences>
+  </div>
+
+  <div class="grid-in-certificates">
+    <div class="mt-5"></div>
+    <app-certificates
+      [certificates]="portfolioService.certificates"
+    ></app-certificates>
   </div>
 
   <div class="grid-in-projects">
     <app-projects></app-projects>
   </div>
 </div>
-
-<div id="particles-js"></div>

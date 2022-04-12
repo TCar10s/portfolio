@@ -5,7 +5,7 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
   selector: 'app-sidebar',
   template: `
     <app-skills [skills]="portfolioService.skills"></app-skills>
-    <div class="my-5"></div>
+    <div class="mb-5"></div>
     <app-hobbies [hobbies]="portfolioService.hobbies"></app-hobbies>
   `,
   styles: [],

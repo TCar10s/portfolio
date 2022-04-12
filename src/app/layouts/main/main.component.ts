@@ -5,10 +5,8 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
   selector: 'app-main',
   template: `
     <app-blog></app-blog>
-    <div class="my-5"></div>
+    <div class="mb-5"></div>
     <app-experiences [experiences]="portfolioService.experiences"></app-experiences>
-    <div class="my-5"></div>
-    <app-certificates [certificates]="portfolioService.certificates"></app-certificates>
   `,
   styles: [],
 })
