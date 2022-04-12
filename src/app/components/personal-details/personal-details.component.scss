@@ -1,5 +1,5 @@
 .details__figcaption {
-  @apply md:ml-6;
+  @apply md:ml-6 flex flex-col justify-between;
 }
 
 .details__title {
