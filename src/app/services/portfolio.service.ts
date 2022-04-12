@@ -158,7 +158,7 @@ export class PortfolioService {
     {
       name: 'Films app',
       technologies: '#HTML #CSS #Angular',
-      description: 'In this project, I work with HTML, CSS, TypeScript, JavaScript and Angular to create app for a movie search.',
+      description: 'In this project, I work with HTML, CSS, TypeScript, Angular and implement subjects to manage the states.',
       image: './assets/images/films-app.webp',
       demo: 'https://films-app-ng.netlify.app/home',
       code: 'https://github.com/TCar10s/ng-films-app',

@@ -1,3 +1,5 @@
+const savvywombatGridAreas = require("@savvywombat/tailwindcss-grid-areas");
+
 module.exports = {
   content: [
     "./src/**/*.{html,ts,css,scss}",
@@ -40,5 +42,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("@savvywombat/tailwindcss-grid-areas")],
+  plugins: [savvywombatGridAreas],
 };
