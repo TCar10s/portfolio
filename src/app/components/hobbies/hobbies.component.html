@@ -3,7 +3,7 @@
 
   <div class="md:flex-column md:gap-10">
     <div *ngFor="let item of hobbies" class="mt-5 md:w-full">
-      <img
+      <img loading="lazy"
         [src]="item.image"
         alt="hobbie"
         class="rounded-2xl bg-cover
