@@ -100,7 +100,7 @@ export class PortfolioService {
       description:
         'Has successfully cleared the asserssment for the skill in Angular.',
       image:
-        'https://media-exp1.licdn.com/dms/image/C560BAQHneWLNCPQgDA/company-logo_100_100/0/1641202397642?e=1652918400&v=beta&t=3CGKi4k3XA051g5dJlZH9VBmvraYUBmF9qMSOWpZgN0',
+        'https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png',
       expedition: 'January 2022',
       link: 'https://www.hackerrank.com/certificates/92ecaf53a18c',
     },
@@ -109,7 +109,7 @@ export class PortfolioService {
       description:
         'Has successfully cleared the asserssment for the skill in Angular basic.',
       image:
-        'https://media-exp1.licdn.com/dms/image/C560BAQHneWLNCPQgDA/company-logo_100_100/0/1641202397642?e=1652918400&v=beta&t=3CGKi4k3XA051g5dJlZH9VBmvraYUBmF9qMSOWpZgN0',
+        'https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png',
       expedition: 'January 2022',
       link: 'https://www.hackerrank.com/certificates/16e5c8924fed',
     },
@@ -118,7 +118,7 @@ export class PortfolioService {
       description:
         'Has successfully cleared the asserssment for the skill in JavaScript.',
       image:
-        'https://media-exp1.licdn.com/dms/image/C560BAQHneWLNCPQgDA/company-logo_100_100/0/1641202397642?e=1652918400&v=beta&t=3CGKi4k3XA051g5dJlZH9VBmvraYUBmF9qMSOWpZgN0',
+        'https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png',
       expedition: 'January 2022',
       link: 'https://www.hackerrank.com/certificates/29e7c14e7bc0',
     },
@@ -127,7 +127,7 @@ export class PortfolioService {
       description:
         'Has successfully cleared the asserssment for the skill in CSS.',
       image:
-        'https://media-exp1.licdn.com/dms/image/C560BAQHneWLNCPQgDA/company-logo_100_100/0/1641202397642?e=1652918400&v=beta&t=3CGKi4k3XA051g5dJlZH9VBmvraYUBmF9qMSOWpZgN0',
+        'https://upload.wikimedia.org/wikipedia/commons/4/40/HackerRank_Icon-1000px.png',
       expedition: 'January 2022',
       link: 'https://www.hackerrank.com/certificates/ac1532880848',
     },

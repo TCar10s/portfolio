@@ -4,7 +4,14 @@
   <div class="grid md:grid gap-x-5 md:grid-cols-2">
     <div class="flex mt-12" *ngFor="let item of certificates">
       <a [href]="item.link" target="_blank">
-        <img loading="lazy" [src]="item.image" class="rounded-lg h-14 w-h-14" alt="certificate"/>
+        <img
+          rel="preload"
+          as="image"
+          loading="lazy"
+          [src]="item.image"
+          class="rounded-lg h-14 w-h-14"
+          alt="certificate"
+        />
       </a>
       <div class="w-9/12 ml-8 md:w-4/5">
         <p class="text-sm text-gray-2">{{ item.expedition }}</p>
