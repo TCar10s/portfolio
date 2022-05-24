@@ -11,7 +11,6 @@ import {
   providedIn: 'root',
 })
 export class PortfolioService {
-
   private totalProjects$: BehaviorSubject<number> = new BehaviorSubject(0);
 
   get getTotalProjects(): Observable<number> {
@@ -61,12 +60,20 @@ export class PortfolioService {
 
   experiences: Experience[] = [
     {
-      company: 'SAP',
+      company: 'WPOSS',
       position: 'Front-end developer',
       time: 'November 2020 - February 2022',
       description:
         'Development of single page applications (SPAs) using Angular and implementing best practices.',
       logo: './assets/images/wposs.webp',
+    },
+    {
+      company: 'SETI',
+      position: 'Full-Stack JavaScript developer',
+      time: 'May 2022 - Present',
+      description:
+        'Single Page Application Development (SPA) with Angular and microservices development with Node.js/Express.',
+      logo: './assets/images/seti.jpg',
     },
   ];
 
@@ -142,7 +149,7 @@ export class PortfolioService {
       image: './assets/images/hospedaje-mirador.webp',
       demo: 'https://hospedajemirador.com/',
       code: '#',
-      showCode: false
+      showCode: false,
     },
     {
       name: 'My Gallery',
@@ -152,45 +159,48 @@ export class PortfolioService {
       image: './assets/images/interiorConsultantThumbnail.webp',
       demo: 'https://tcar10s.github.io/Interior-consultant/',
       code: 'https://github.com/TCar10s/Interior-consultant',
-      showCode: true
-
+      showCode: true,
     },
     {
       name: 'Films app',
       technologies: '#HTML #CSS #Angular',
-      description: 'In this project, I work with HTML, CSS, TypeScript, Angular and implement subjects to manage the states.',
+      description:
+        'In this project, I work with HTML, CSS, TypeScript, Angular and implement subjects to manage the states.',
       image: './assets/images/films-app.webp',
       demo: 'https://films-app-ng.netlify.app/home',
       code: 'https://github.com/TCar10s/ng-films-app',
-      showCode: true
+      showCode: true,
     },
     {
       name: 'My Team Page',
       technologies: '#HTML #CSS #JavaScript #DevChallenge',
-      description: 'In this project, I work with HTML and CSS to create a responsive page.',
+      description:
+        'In this project, I work with HTML and CSS to create a responsive page.',
       image: './assets/images/my-team-page.webp',
       demo: 'https://tcar10s.github.io/my-team-page/',
       code: 'https://github.com/TCar10s/my-team-page',
-      showCode: true
+      showCode: true,
     },
     {
       name: 'Blackjack',
       technologies: '#HTML #CSS #JavaScript #Games',
-      description: 'In this project, I work with HTML, CSS and JavaScript to create a game.',
+      description:
+        'In this project, I work with HTML, CSS and JavaScript to create a game.',
       image: './assets/images/game-blackjack.webp',
       demo: 'https://tcar10s.github.io/game-blackjack/',
       code: 'https://github.com/TCar10s/game-blackjack',
-      showCode: true
+      showCode: true,
     },
     {
       name: 'Todo List',
       technologies: '#HTML #CSS #JavaScript',
-      description: 'In this project, I work with HTML, CSS and JavaScript to create a todo list.',
+      description:
+        'In this project, I work with HTML, CSS and JavaScript to create a todo list.',
       image: './assets/images/todo-list.webp',
       demo: 'https://tcar10s.github.io/todo-list-js/',
       code: 'https://github.com/TCar10s/todo-list-js',
-      showCode: true
-    }
+      showCode: true,
+    },
   ];
 
   constructor() {}
