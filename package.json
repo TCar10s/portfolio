@@ -23,7 +23,7 @@
     "@angular/platform-browser-dynamic": "~13.3.12",
     "@angular/platform-server": "~13.3.12",
     "@angular/router": "~13.3.12",
-    "@nguniversal/express-engine": "^12.1.0",
+    "@nguniversal/express-engine": "^13.1.1",
     "@savvywombat/tailwindcss-grid-areas": "^2.0.1",
     "express": "^4.15.2",
     "localstorage-polyfill": "^1.0.1",
