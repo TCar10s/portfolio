@@ -4,8 +4,9 @@
     "analytics": "858896f2-094a-41a0-b4bf-71b0659e6d39"
   },
   "version": 1,
-  "newProjectRoot": "project",
-  "project": {
+  "newProjectRoot": "projects",
+  "defaultProject": "portfolio",
+  "projects": {
     "portfolio": {
       "projectType": "application",
       "schematics": {
