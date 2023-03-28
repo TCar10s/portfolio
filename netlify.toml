@@ -1,5 +1,5 @@
 [build]
-  command = "npm run prerender"
+  command = "ng build --configuration production && ng run portfolio:serverless:production"
   functions = "./functions"
   publish = "dist/portfolio/browser"
 
