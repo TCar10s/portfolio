@@ -6,7 +6,7 @@
 [[plugins]]
   package = "@netlify/plugin-angular-universal"
   [plugins.inputs]
-    projectName = "portfolio"
+    browserTarget = "portfolio:build:browser"
 
 [[redirects]]
   from = "/*"
