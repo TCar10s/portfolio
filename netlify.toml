@@ -1,12 +1,13 @@
 [build]
-  command = "ng build --configuration production && ng run portfolio:serverless:production"
+  command = "npm run prerender -- --c production && npm run build:ssr"
   functions = "./functions"
   publish = "dist/portfolio/browser"
+
+
+[[plugins]]
+  package = "@netlify/plugin-angular-universal"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-
-[[plugins]]
-  package = "@netlify/plugin-angular-universal"
