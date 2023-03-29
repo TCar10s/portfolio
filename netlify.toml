@@ -7,8 +7,7 @@
   package = "netlify-plugin-prerender-spa"
 
   [plugins.inputs]
-    distDir = "dist/portfolio/browser"
-    routes = "/*"
+    source = "dist"
 
 [[redirects]]
   from = "/*"
