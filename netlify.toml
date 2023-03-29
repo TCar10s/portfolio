@@ -3,12 +3,6 @@
   publish = "dist/portfolio/browser"
   functions = "dist/portfolio/functions"
 
-[[plugins]]
-  package = "netlify-plugin-prerender-spa"
-
-  [plugins.inputs]
-    source = "dist"
-
 [[redirects]]
   from = "/*"
   to = "/index.html"
