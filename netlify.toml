@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build:ssr"
+  command = "npm run prerender"
   publish = "dist/portfolio/browser"
   functions = "dist/portfolio/functions"
 
