@@ -1,7 +1,14 @@
 [build]
-  command = "ng build --configuration production && ng run portfolio:serverless:production"
-  functions = "./functions"
+  command = "npm run build:ssr"
   publish = "dist/portfolio/browser"
+  functions = "dist/portfolio/functions"
+
+[[plugins]]
+  package = "netlify-plugin-prerender-spa"
+
+  [plugins.inputs]
+    distDir = "dist/portfolio/browser"
+    routes = "/*"
 
 [[redirects]]
   from = "/*"

@@ -11,6 +11,7 @@ import { PortfolioService } from './services/portfolio.service';
 export class AppComponent implements OnInit {
   constructor(public portfolioService: PortfolioService) {}
 
+
   public ngOnInit(): void {
     const theme = localStorage.getItem('theme');
 
