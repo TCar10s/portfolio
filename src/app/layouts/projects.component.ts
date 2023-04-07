@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { PortfolioService } from 'src/app/services/portfolio.service';
 
 @Component({
@@ -13,12 +13,9 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
       ></app-project>
     </div>
   `,
-  styles: [],
 })
-export class ProjectsComponent implements OnInit {
+export class ProjectsComponent {
   filter = '';
 
   constructor(public portfolioService: PortfolioService) {}
-
-  ngOnInit(): void {}
 }

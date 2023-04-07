@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { PortfolioService } from 'src/app/services/portfolio.service';
 
 @Component({
@@ -8,10 +8,7 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
     <div class="mb-5"></div>
     <app-hobbies [hobbies]="portfolioService.hobbies"></app-hobbies>
   `,
-  styles: [],
 })
-export class SidebarComponent implements OnInit {
+export class SidebarComponent {
   constructor(public portfolioService: PortfolioService) {}
-
-  ngOnInit(): void {}
 }

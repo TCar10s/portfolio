@@ -12,12 +12,18 @@ interface Developer {
 @Component({
   selector: 'app-personal-details',
   templateUrl: './personal-details.component.html',
-  styleUrls: ['./personal-details.component.scss'],
+  styles: [
+    `
+      .details__figcaption {
+        @apply md:ml-6 flex flex-col justify-between;
+      }
+
+      .details__title {
+        @apply mt-4 md:flex md:justify-between md:items-center;
+      }
+    `,
+  ],
 })
-export class PersonalDetailsComponent implements OnInit {
+export class PersonalDetailsComponent {
   @Input() developer!: Developer;
-
-  constructor() {}
-
-  ngOnInit(): void {}
 }

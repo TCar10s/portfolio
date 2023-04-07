@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { PortfolioService } from 'src/app/services/portfolio.service';
 
 @Component({
@@ -6,12 +6,11 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
   template: `
     <app-blog></app-blog>
     <div class="mb-5"></div>
-    <app-experiences [experiences]="portfolioService.experiences"></app-experiences>
+    <app-experiences
+      [experiences]="portfolioService.experiences"
+    ></app-experiences>
   `,
-  styles: [],
 })
-export class MainComponent implements OnInit {
+export class MainComponent {
   constructor(public portfolioService: PortfolioService) {}
-
-  ngOnInit(): void {}
 }
