@@ -8,8 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "dev:ssr": "ng run portfolio:serve-ssr",
-    "serve:ssr": "node dist/portfolio/server/main.js",
-    "build:ssr": "ng build && ng run portfolio:server",
+    "serve:ssr": "node dist/portfolio/serverless/main.js",
+    "build:ssr": "ng build && ng run portfolio:serverless",
     "prerender": "ng run portfolio:prerender"
   },
   "private": true,
