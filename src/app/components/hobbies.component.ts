@@ -12,8 +12,9 @@ import { Hobbie } from 'src/app/interfaces/card.interface';
           <img
             rel="preload"
             as="image"
-            loading="lazy"
-            [src]="item.image"
+            [ngSrc]="item.image"
+            width="400"
+            height="200"
             alt="hobbie"
             class="rounded-2xl bg-cover md:object-cover md:max-h-[176px] md:w-full"
           />

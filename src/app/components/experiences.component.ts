@@ -12,10 +12,11 @@ import { Experience } from 'src/app/interfaces/card.interface';
           <img
             rel="preload"
             as="image"
-            loading="lazy"
-            [src]="item.logo"
+            [ngSrc]="item.logo"
             class="rounded-lg h-14 w-h-14"
-            alt=""
+            alt="experience"
+            width="55"
+            height="200"
           />
           <div class="w-9/12 ml-8 md:w-4/5">
             <h1 class="mb-1 text-xl font-semibold dark:text-white">

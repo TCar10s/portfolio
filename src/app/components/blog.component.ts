@@ -29,10 +29,11 @@ import { Component } from '@angular/core';
         <img
           rel="preload"
           as="image"
-          loading="lazy"
-          src="assets/images/code.webp"
-          class="rounded-xl mt-5 w-full xl:max-w-[50%]"
+          ngSrc="./assets/images/code.webp"
+          class="rounded-xl mt-5"
           alt="code"
+          width="500"
+          height="500"
         />
       </div>
       <a

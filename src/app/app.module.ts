@@ -18,6 +18,7 @@ import {
   SkillsComponent,
   ToggleComponent,
 } from './components';
+import { NgOptimizedImage } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import {
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     FormsModule,
+    NgOptimizedImage
   ],
   bootstrap: [AppComponent],
 })

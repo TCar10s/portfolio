@@ -8,8 +8,9 @@ import { Project } from 'src/app/interfaces/card.interface';
       <img
         rel="preload"
         as="image"
-        loading="lazy"
-        [src]="project.image"
+        [ngSrc]="project.image"
+        width="400"
+        height="320"
         alt="Person"
         class="rounded-xl"
       />

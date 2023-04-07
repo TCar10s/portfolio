@@ -12,8 +12,9 @@ import { Component, Input } from '@angular/core';
             <img
               rel="preload"
               as="image"
-              loading="lazy"
-              [src]="item.image"
+              [ngSrc]="item.image"
+              width="55"
+              height="200"
               class="rounded-lg h-14 w-h-14"
               alt="certificate"
             />
